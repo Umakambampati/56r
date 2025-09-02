@@ -4,7 +4,8 @@
   padding: 0;
 }
 .image-container {
-  width: 500px;                  
+  width: 500px;  
+  height: 500px;                
   padding: 20px;                
   border: 2px solid blue;        
   margin: 20px;             
@@ -17,7 +18,8 @@
   height: 50%;                
 }             
 .image-container2 {
-  width: 500px;                  
+  width: 500px; 
+  height:500px;                 
   padding: 20px;                
   border: 2px solid blue;        
   margin: 20px;             
@@ -32,7 +34,8 @@
 }
 
 .image-container3 {
-  width: 500px;                  
+  width: 500px;  
+  height:500px;                
   padding: 20px;                
   border: 2px solid blue;        
   margin: 20px;             
@@ -47,7 +50,8 @@
 
 
 .image-container4 {
-  width: 500px;                  
+  width: 500px;  
+  height:500px;                
   padding: 20px;                
   border: 2px solid blue;        
   margin: 20px;             
@@ -63,7 +67,8 @@
 }
 
 .image-container5 {
-  width: 500px;                  
+  width: 500px; 
+  height:500px;                 
   padding: 20px;                
   border: 2px solid blue;        
   margin: 20px;             
