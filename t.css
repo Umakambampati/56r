@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+h2,h3{
+    padding:20px;
+   
+}
+.linear-container {
+    width:200px;
+    height:200px;
+    border:2px solid;
+    background-image: repeating-linear-gradient(red 20%,yellow 40%,green 80%);
+     margin-left:20px;
+     text-align: center;
+     line-height: 200px;
+}
+.radial-container {
+    width:200px;
+    height:200px;
+    border:2px solid;
+    background-image: radial-gradient(circle,green,yellow,red);
+     margin-left:20px;
+     text-align: center;
+     line-height: 200px;
+}
+.conic-container {
+    width:200px;
+    height:200px;
+    border:2px solid;
+    background-image: conic-gradient(green 0% 25%,yellow 25% 50%,red 50% 75%,blue 75% 100%);
+     margin-left:20px;
+     text-align: center;
+     border-radius: 50%;
+     line-height: 200px;
+}
