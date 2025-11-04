@@ -1,0 +1,39 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+.nav-container{
+    border:2px solid;
+    padding:10px;
+    position:fixed;
+    z-index:+1;
+    width:100%;
+    bottom:0px;
+}
+.small1{
+    display:inline-block;
+    left: 2px;
+    font-size:30px;
+    position:relative;
+    left:50px;
+}
+.small2{
+    display:inline-block;
+     font-size:30px;
+     position:absolute;
+     left:500px;
+}
+.small3{
+    display:inline-block;
+     font-size:30px;
+     position:absolute;
+     right:600px;
+
+}
+.small4{
+    display:inline-block;
+     font-size:30px;
+     position:absolute;
+     right:150px;
+}
