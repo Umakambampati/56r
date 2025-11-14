@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" >Red</button>
+     <button id="btn2" >Green</button>
+      <button id="btn3" >Blue</button>
+       <button id="btn4" >Yellow</button>
+       <button id="btn5">Black</button>
+       <button id="clear">Clear all</button>
+       <script>
+        let a=document.getElementById("btn1");
+        a.style.color="black";
+        a.style.backgroundColor="red";
+         let b=document.getElementById("btn2");
+        b.style.color="black";
+        b.style.backgroundColor="green";
+         let c=document.getElementById("btn3");
+        c.style.color="black";
+        c.style.backgroundColor="blue";
+         let d=document.getElementById("btn4");
+        d.style.color="black";
+        d.style.backgroundColor="yellow";
+         let e=document.getElementById("btn5");
+        e.style.color="white";
+        e.style.backgroundColor="black";
+
+
+        let container=document.createElement("div");
+        document.body.appendChild(container);
+        container.style.border = "2px solid black";
+        container.style.width="500px";
+        container.style.height="500px";
+        container.style.margin="30px";
+        container.style.display = "flex";
+container.style.flexWrap = "wrap";
+
+
+
+        function createColorBox(color){
+            let box=document.createElement("div");
+            box.style.backgroundColor=color;
+            box.style.width="50px";
+            box.style.height="50px";
+            box.style.padding="20px";
+            box.style.margin="20px";
+            box.style.position="relative";
+             box.classList.add("colorbox");
+        
+        let del=document.createElement("span");
+        del.innerText="❌";
+        del.style.color="black";
+        del.style.cursor="pointer";
+        del.style.position="absolute";
+        del.style.top="0px";
+        del.style.right="0px";
+        box.appendChild(del);
+         container.appendChild(box);
+           del.onclick=function(){
+            box.remove();
+            
+        }
+}
+document.getElementById("btn1").onclick = function () {
+    createColorBox("red");
+};
+document.getElementById("btn2").onclick = function () {
+    createColorBox("green");
+};
+document.getElementById("btn3").onclick = function () {
+    createColorBox("blue");
+};
+document.getElementById("btn4").onclick = function () {
+    createColorBox("yellow");
+};
+document.getElementById("btn5").onclick = function () {
+    createColorBox("black");
+};
+document.getElementById("clear").onclick = function () {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+};
+
+
+        </script>
+
+</body>
+</html>
