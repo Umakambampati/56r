@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    height:100%
+}
+body{
+    display:flex;
+    flex-direction: column; 
+    height: 100%;
+}
+.one, .two,.three{
+    width:90%;
+    height:30px;
+    background-color: rgba(0, 0, 0, 0.384);
+    margin-bottom:25px;
+    text-align: center;
+
+}
+.one>.para{
+    width:25%;
+    height:100%;
+    background-color: rgba(0, 128, 0, 0.685);
+    color:white;
+}
+.two>.para{
+    width:50%;
+    height:100%;
+    background-color: orange;
+    color: black;
+}
+.three>.para{
+     width:75%;
+     height:100%;
+     background-color: red;
+     color: white;
+}
+.general{
+    width:90%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.heading1, .heading2, .heading3{
+    width:90%;
+    font-size: 18px;
+}

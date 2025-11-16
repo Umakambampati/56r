@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container img{
+    float:right;
+    margin-left:20px;
+}
+p{
+    font-size:20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    color:white;
+    padding:20px;
+}

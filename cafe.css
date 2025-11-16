@@ -1,0 +1,330 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.nav-container{
+    display:flex;
+    justify-content:space-around;
+    background-color: black;
+    width:100%;
+    height:60px;
+    align-items: center;
+    position:fixed;
+    padding:15px 20px;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+}
+body {
+    padding-top: 60px;
+  background-color: #e0e0e070;  
+} 
+.name{
+    color:white;
+    font-size:15px;
+    font-family: sans-serif;
+    cursor:pointer;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding:10px;
+}
+.name:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+    color:black;
+}
+.img-container{
+    position:relative;
+}
+.img-container img{
+    width:100%;
+    height:500px;
+    object-fit: cover;
+    filter:grayscale(50%);
+}
+.imagetext {
+    position: absolute;
+    bottom: 20px;          
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 5px 10px;                                     
+    font-size: 14px;
+    font-family: sans-serif;
+     letter-spacing: 2px;
+     margin-left: 30px;
+    
+}
+.text1{
+    color:white;
+    margin-right: 30px;
+    font-size:14px;
+    letter-spacing: 2px;
+      font-family: sans-serif;
+
+}
+.middletext {
+    position: absolute;
+    flex-direction: column;
+    transform: translate(-50%, -50%); 
+    display: flex;
+      top: 50%;
+      left: 50%;
+}
+
+.middletext .middle1{
+    color: white;
+    font-size: 80px;
+    font-family:sans-serif;
+    letter-spacing: 6px;
+    margin-left: 40px;
+    
+}
+.middletext .middle2{
+    color: white;
+    font-size: 80px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    letter-spacing: 6px;
+}
+.main-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.first-container {
+  max-width: 800px;  
+  padding: 20px;
+  text-align: left;  
+}
+
+.heading1 {
+  margin-bottom: 80px;
+  margin-top:50px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight:400px;
+  background-color: black;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display:inline-block;
+  margin-left: 40%;
+  margin-right: aut0;
+  padding:5px 15px;
+}
+
+.content {
+  margin-bottom: 30px;
+  line-height: 1.5;
+   font-size: 18px;
+  letter-spacing: 2px;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.small-container{
+    background-color: rgba(0, 0, 0, 0.027);
+    padding:20px;
+    box-shadow: 
+        -5px 0 0 0 rgba(0, 0, 0, 0.247),  
+        -6px 0 0 0 rgba(0, 0, 0, 0.247);
+}
+.small-content {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+     font-family: sans-serif;
+      letter-spacing: 2px;
+}
+.small-content1{
+  margin-bottom: 15px;
+  line-height: 1.5;
+   font-size: 18px;
+  letter-spacing: 2px;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.image-container4{
+    max-width:800px;
+   margin:20px auto 0;
+   padding:0;
+}
+.image-container4 img{
+   width:100%;
+   display:block;
+   height:auto;
+   margin-top:20px;
+   filter:grayscale(75%);
+}
+.timings{
+    margin-bottom:10px;
+    margin-top:20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.content1, .content2 {
+    display: none;         
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(0,0,0,0.26);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 0 auto 20px auto;
+    background-color: rgba(0, 0, 0, 0.062)5677;
+}
+
+
+#tab1:checked ~ .content1 {
+    display: block;
+}
+
+#tab2:checked ~ .content2 {
+    display: block;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    border-bottom: 3px solid #ccc;
+    overflow: hidden;
+    padding: 10px;
+    gap: 10px;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+}
+.target1, .target2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+#tab1:checked ~ .container2 .target1 {
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+}
+
+#tab2:checked ~ .container2 .target2 {
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+}
+input[type="radio"] {
+    display: none;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+.place{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.last-content{
+    font-size: 18px;
+    margin-bottom:20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.fly{
+    background-color: black;
+    color:white;
+    display:inline-block;
+}
+.form-container{
+   max-width:800px;
+   margin:20px auto;
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+   box-sizing: border-box;
+}
+.form-container input[type="text"] {
+    width: 100%;          
+    padding: 15px 25px;
+    font-size: 16px;
+    border: 2px solid rgba(0,0,0,0.26);
+    box-sizing: border-box;
+     font-family: sans-serif;
+}
+.form-container input[type="date"] {
+    width: 100%;          
+    padding: 15px 25px;
+    font-size: 16px;
+    border: 2px solid rgba(0,0,0,0.26);
+    box-sizing: border-box;
+     font-family: sans-serif;
+}
+.message{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    padding:10px;
+    font-family: sans-serif;
+    cursor:pointer;
+    display:inline-block;
+}
+.message:hover{
+    background-color: gray;
+    color:black;
+}
+.last-line{
+    height:100px;
+    width:100%;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.last-line .w3css-link {
+  color: black;       
+}
+.w3css-link:hover{
+    background-color: rgba(144, 238, 144, 0.432);
+}

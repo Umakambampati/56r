@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body
+style="background-color:#003b4c; font-family:Arial; color:white;">
+    <form action="submit.html" method="get">
+            <center>
+                <h1>Application Form</h1>
+            </center>
+            <fieldset>
+                <table cellspacing="0" cellpadding="10">
+            <tr>
+                <td><label for="name">First Name:</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="First Name" id="name"></td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td><label for="name">Last Name:</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="Last Name" id="name"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label for="DOB">Date of Birth:</label>
+                        &nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="mm/dd/yyyy" id="DOB" name="dob"></td>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <td><label for="age">Age:</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="age" name="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="Female" name="gender">
+                    <label for="Female">Female</label></td>
+                    <td><label for="Email" >Email Address</label>
+                        &nbsp;
+                    <input type="text" placeholder="Enter Email Address:" id="Email" name="mail"></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td><label for="position">Positions Available:</label>
+                        <input type="radio" id="position" name="position">
+                         <label for="position">Junior Developer</label>
+                        <input type="radio" id="position" name="position">
+                        <label for="position">Mid-level Developer</label>
+                        <input type="radio" id="position" name="position">
+                    <label for="position">Senior Developer</label></td>
+                    </tr>
+                <tr><td><label for="lang">Programming Languages:</label>
+                    &nbsp;&nbsp;&nbsp;
+               <input type="checkbox"id="java" name="java">
+                <label for="java">Java</label>
+                <input type="checkbox"id="js" name="js">
+                <label for="js">Java Script</label>
+                <input type="checkbox"id="python" name="python">
+                <label for="python">Python</label></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password:</label>
+                    &nbsp;&nbsp;&nbsp;
+  <input type="password" name="pass" id="pass"  required maxlength="8"  required minlength="8"><br>
+  <small>"Password must be at least 8 characters, include a number and a capital letter."</small>
+                    <td><label for="pass"> Confirm Password:</label>
+                        &nbsp;&nbsp;&nbsp; 
+                <input type="password" id="pass" name="pass" required maxlength="8"  required minlength="8">
+            </td>
+            </tr></table><br>
+            <center>
+            <input type="submit" value="submit" style="background-color: red; color: white; padding: 8px 20px; border: none; border-radius:5px;">
+<input type="reset" value="Reset" style="background-color: red; color: white; padding: 8px 20px; border: none; border-radius:5px;">
+            </center>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,310 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    position:fixed;
+    top:0;
+    width:360px;
+    height:100vh;
+    top:0px;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start; 
+    align-items: flex-start;     
+    padding: 50px 20px;          
+    background-color: #f8f8f8;
+}
+.container .first,
+.container .second{
+    padding-left: 100px;
+}
+.container .first{
+    font-size:25px;
+    font-weight:bold;
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    color:rgba(0, 0, 0, 0.534);
+}
+.container .second{
+    font-size:15px;
+    font-weight:bold;
+    margin:7px 0;
+    font-family: Arial, sans-serif;
+    color:rgba(0, 0, 0, 0.651);
+    cursor:pointer;
+    transition:0.5 ease;
+    padding: 8px 100px;           
+    box-sizing: border-box; 
+    width: 100%;               
+    display: flex;             
+    justify-content:flex-start; 
+}
+.container .second:hover{
+    color:black;
+    background-color: rgba(0, 0, 0, 0.37);
+    
+}
+.image-container{
+    margin-left:400px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: calc(100% - 360px);
+    cursor:pointer;
+
+}
+
+.image-container img{
+    width: 320px;
+    height:400px;
+    object-fit: cover;
+    flex-shrink:0;
+    opacity: 0.7;                 
+    transition: opacity 0.3s ease;
+}
+.image-container img:hover {
+    opacity: 1;                   /* fully visible on hover */
+}
+.numbers {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding:20px;
+    cursor: pointer;
+}
+
+.numbers p {
+    display: inline-block;   /* so numbers sit in one line */
+    margin: 0 5px;           /* spacing between numbers */
+    padding: 5px 5px;       /* optional padding */
+}
+
+.num1 {
+    background-color: black;
+    color: white;            
+}
+.numbers .num1:hover{
+    background-color:rgba(0, 0, 0, 0.308);
+    color:black;
+}
+.numbers .num2:hover{
+    background-color:black;
+    color:white;
+}
+.numbers .num3:hover{
+    background-color:black;
+    color:white;
+}
+.numbers .num4:hover{
+    background-color:black;
+    color:white;
+}
+.main-container {
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    padding: 20px 0;          
+}
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.main-container img{
+    width:700px;
+    height:500px;
+    margin-top:30px;
+    object-fit: cover;
+    opacity:1;
+    transition:none;
+}
+.main-container .para1,
+.main-container .para2,
+.main-container .para3,
+.main-container .para4 {
+    display:block;  /* allows width to be applied and centered */
+    width: 700px;           /* same as image width */
+    text-align: left;       /* text inside aligned left */
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;  
+     font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+.main-container .para1{
+    font-size:20px;
+    margin-top:20px;
+}
+.main-container .para2{
+    font-size:13px;
+    text-align: justify;
+}
+.main-container .para3{
+    font-size:13px;
+
+}
+
+.main-container .para4{
+    font-size:13px;
+
+}
+.content-line {
+    display: block;               
+    width:700px;          
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 40px 0 0 0; 
+}
+.skill{
+    width: 700px;
+    margin-top:30px;
+    color:white;
+    font-size:20px;
+}
+.skill1{
+    width: 700px;
+    margin-top:30px;
+    color:white;
+    font-size:20px;
+}
+.progress-container {
+    width: 700px;           
+    height: 30px;           
+    background-color: white; 
+    border: 1px solid #ccc;       
+    overflow: hidden; 
+    margin-top:10px;  
+    position: relative;     
+}
+
+.progress-fill {
+    width:95%;
+     height: 100%;
+    background-color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* vertically center text */
+    padding-right: 5px;       /* spacing from right edge */
+    color: white;             /* text color */
+    font-size: 20px; 
+}
+.progress-text {
+    color:black;
+}
+.skill2{
+    width: 700px;
+    margin-top:30px;
+    color:white;
+    font-size:20px;
+}
+.progress-container1 {
+    width: 700px;           
+    height: 30px;           
+    background-color: white; 
+    border: 1px solid #ccc;       
+    overflow: hidden; 
+    margin-top:10px;  
+    position: relative;     
+}
+
+.progress-fill1{
+    width:90%;
+     height: 100%;
+    background-color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* vertically center text */
+    padding-right: 5px;       /* spacing from right edge */
+    color: white;             /* text color */
+    font-size: 20px; 
+}
+.progress-text {
+    color:black;
+}.skill3{
+    width: 700px;
+    margin-top:30px;
+    color:white;
+    font-size:20px;
+}
+.progress-container2 {
+    width: 700px;           
+    height: 30px;           
+    background-color: white; 
+    border: 1px solid #ccc;       
+    overflow: hidden; 
+    margin-top:10px;  
+    position: relative;     
+}
+
+.progress-fill2 {
+    width:80%;
+     height: 100%;
+    background-color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* vertically center text */
+    padding-right: 5px;       /* spacing from right edge */
+    color: white;             /* text color */
+    font-size: 20px; 
+}
+.progress-text {
+    color:black;
+}
+.resume { 
+    display: inline-block;       /* shrink to content */
+    font-size: 20px;
+    margin: 20px 0 0 0;          /* top margin, no left margin */
+    background-color: white;     /* only behind content */
+    padding: 5px 10px;           /* optional padding inside */
+    box-sizing: border-box; 
+    margin-left: calc(50% - 1020px);
+    
+                     /* keeps it left-aligned */
+}
+.resume:hover{
+    background-color: rgba(0, 0, 0, 0.171);
+}
+.tag{
+    width:700px;
+    margin-top:30px;
+    font-size:20px;
+    color:white;
+}
+.terms{
+    width:700px;
+    margin-top:20px;
+}
+.Basic{
+    width:330px;
+    background-color: rgba(0, 0, 0, 0.849);
+    font-size:25px;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+.terms3{
+    width:330px;
+    background-color: rgba(0, 0, 0, 0.384);
+    font-size:20px;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+.content-line1 {
+    display: block;               /* make it block so width works properly */
+    width:370px;           /* line only as wide as content */
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.582);
+}
+
+
+
+
+

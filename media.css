@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    background-color: blue;
+}
+.container2{
+    display: flex;
+    gap:20px;
+   
+}
+.item1, .item2, .item3 {
+    color: black;
+    font-weight: bold;
+}
+

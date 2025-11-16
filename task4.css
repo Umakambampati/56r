@@ -1,0 +1,84 @@
+.button-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding:20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+.link-list{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  height:300px;
+}
+.link-list li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding: 10px;
+      background-color: beige;
+    }
+.link-list li:first-child a {
+    color:greenyellow;
+    background-color:black;
+}
+.link-list li:last-child a {
+    color:crimson;
+    background-color:indigo;
+}
+.link-list li:nth-child(3) a {
+    color:blueviolet;
+    background-color: red;
+}
+.music-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+h1::before{
+    content:"🎶";
+}
+h1::after{
+    content:"🎶";
+}
+h2::before{
+    content:"🎵🎧";
+}
+h2::after{
+    content:"🎼🎙";
+}
+.transition{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn2{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    font-size: 25px;
+    padding:20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.7s;
+    border-radius: 30px;
+    border:none;
+}
+.btn2:hover{
+    background-color: darkgray;
+    color: black;
+}

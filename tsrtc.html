@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <img src="./images/transport.png" alt="tran" width="60%">
+    </center>
+    <form action="./sub.html" method="get">
+        
+        <fieldset>
+                      <legend style="background-color:blue ;font-family:Arial; color:white;">Applicant Details</legend>
+        <table cellspacing="0" cellpadding="10">
+            <tr>
+                <td><label for="Name">Name<span style="color: red;"><sup>*</sup></span></label></td>
+                <td><input type="text" name="name" id="Name"><br>
+                <span style="color: red;">(Maximum characters:20)</span></td>
+                <td><label for="Father's/Guardian Name">Father's/Guardian Name <span style="color: red;"><sup>*</sup></span></label>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" id="Father's/Guardian Name"></td>
+                </tr>
+                <tr>
+                <td><label for="DOB">Date of Birth <span style="color: red;"><sup>*</sup></span></label></td>
+                <td><input type="text" name="name" id="DOB"></td>
+                <td><label for="Gender">Gender<span style="color: red;"><sup>*</sup></span></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="male"name="gender" value="male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female"name="gender"  value="Female">
+                  <label for="Female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><label for="Age As On">Age As On:</label></td>
+                    <td><input type="text" id="age As On" name="Age" size="1">Year(s)
+                    <input type="text" id="age As On" name="Age" size="1">Months(s)
+                <input type="text" id="age As On" name="Age" size="1">Days(s)</td>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><label for="Aadhaar No">Aadhaar No:</label>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input type="text" id="Adhar" name="Adhar" required maxlength="12" minlength="12"></td>
+                </tr>
+                <tr>
+                    <td><label for="Whatsapp">Whatsapp<span style="color: red;""><sup>*</sup></span> </label></td>
+                    <td><input type="text" id="Whatsapp" name="app"></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><label for="Email Id">Email Id <span style="color: red;""><sup>*</sup></span></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="Email Id" name="Email id"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Photo">Photo<span style="color: red;""><sup>*</sup></span></label></td>
+                       <td><input type="file" id="Photo" name="photo">
+                    </td>
+                </tr>
+                </table>
+                </fieldset>
+                <br>
+                 <fieldset>
+            <legend style="background-color:blue ;font-family:Arial; color:white;">Residential Address</legend>
+        <table cellspacing="0" cellpadding="10">
+            <tr>
+                <td><label for="Address">Address<span style="color: red;""><sup>*</sup></span></label></td>
+                    <td><textarea name="address" maxlength="20" rows="4" cols="30" required></textarea><br>
+                    <span style="color: red;">(Maximum characters:20)</span><br>
+                  <span style="color: red;">you have <input type="text" disabled placeholder="20" size="1">characters left</span></td></td>
+                   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td><label for="District">District<span style="color: red;""><sup>*</sup></span></label>
+                        &nbsp;&nbsp;&nbsp;
+                     <select name="district">
+        <option value="HYDERABAD">HYDERABAD</option>
+      </select></td></tr>
+      <tr>
+            <td><label for="Mandal">Mandal<span style="color: red;""><sup>*</sup></span></label></td>
+                 &nbsp;&nbsp;&nbsp;
+                    <td><select name="Mandal">
+        <option value="HYDERABAD">HYDERABAD</option>
+      </select>
+      <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</td>
+    </td>
+     <td><label for="Village">Village<span style="color: red;""><sup>*</sup></span></label>
+                 &nbsp;&nbsp;&nbsp;
+                    <select name="Village">
+        <option value="HYDERABAD">HYDERABAD</option>
+      </select></td>
+                 </tr> 
+                 <tr>
+                    <td>
+                        <label for="Pin">Pincode<span style="color: red;""><sup>*</sup></span></label>
+                        </td><td>
+                        <input type="text" id="Pin" name="pin">
+                    </td>
+                 </tr>  
+                </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                              <legend style="background-color:blue ;font-family:Arial; color:white;">Pass Type Details</legend>
+                    <table cellspaing="0" cellpadding="10">
+                        <tr>
+                            <td><label for="City">City<span style="color: red;""><sup>*</sup></span></label></td>
+                    <td><select name="City">
+        <option value="HYDERABAD">HYDERABAD</option>
+      </select></td></tr>
+      <tr>
+      <td><label for="PassType">Pass Type<span style="color: red;""><sup>*</sup></span></label></td>
+                  <td><select name="district">
+  <option value="sel">----select-----</option>
+    <option value="Hyd">Hyderabad</option>
+  <option value="RNG">Ranga Reddy</option>
+  <option value="WGL">Warangal</option>
+</select></td></tr>
+                    </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                             <legend style="background-color:blue ;font-family:Arial; color:white;">Mode of payment and payment collection</legend>
+                    <table cellspaing="0" cellpadding="10">
+                    <tr>
+                        <td>
+                            <label for="payment">Payment Mode<span style="color: red;""><sup>*</sup></span></label>
+                        </td>
+                        <td><select name="payment">
+  <option value="select mode">select mode</option>
+    <option value="Pay at counter">Payment at counter<span style="color: red;""><sup>*</sup></span></option>
+</select></td></tr>
+<td>
+     <label for="payment">Pass  Mode<span style="color: red;""><sup>*</sup></span></label>
+            </td>
+<td><select name="pass delivery mode">
+  <option value="select mode">Select Passs Delivery Mode</option>
+    <option value="Pay at counter">Payment at counter</option>
+</select></td></tr>
+<td>
+     <label for="payment">center at which you collect pass<span style="color: red;""><sup>*</sup></span></label>
+            </td>
+<td><select name="payment">
+  <option value="select mode">select</option>
+    <option value="L.Bnagar">L.B nagar</option>
+    <option value="Hyd">Hyderabad</option>
+  <option value="hayathnagar">hayathnagar</option>
+  <option value="dilshuknagar">dilshukhnagar</option>
+  <option value="madhapur">madhapur</option>
+  <option value="mgbs">mgbs</option>
+  <option value="panjagutta">panjagutta</option>
+</select></td></tr>
+</select></td></tr>
+</select>
+</tr>
+                    </table>
+                </fieldset>
+    <center>
+    <img src="./images/captcha.png" alt="cap" width="30%"><br>
+    <label for="name"></label><br>
+    <input type="text" id="name" name="name"><br><br>
+   <input type="submit" value="Submit">
+    </center>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.container{
+  width:80%;
+  background-color: darkgray;
+}
+h1{
+    font-family: sans-serif;
+    background-color:black;
+    color:white;
+    display:inline-block;
+    padding:10px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.img-container{
+    width:400px;
+    height:350px;
+    margin:10px 20px;
+}
+.img-container img{
+    width:100%;
+    border-radius: 50%;
+}
+p{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top:70px;
+    color:black;
+    background-color:blanchedalmond;
+    padding:20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight:500;
+}

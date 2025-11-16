@@ -1,0 +1,19 @@
+.linear {
+      width: 300px;
+      height: 150px;
+      background: linear-gradient(to right, red, yellow);
+      margin-bottom: 20px;
+    }
+
+    .radial {
+      width: 300px;
+      height: 150px;
+      background: radial-gradient(circle, blue, lightblue);
+      margin-bottom: 20px;
+    }
+    .repeating-radial{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: repeating-linear-gradient(45deg, red, yellow 20px, green 40px);
+    }

@@ -1,0 +1,21 @@
+
+For returning present month 
+we have to give new measure 
+presentmonth=TOTALMTD(SUM(salesdata[SALES]),salesdata[DATE])
+
+presentquarter=TOTALQTD(SUM(salesdata[SALES]),salesdata[DATE])
+presentyear=TOTALYTD(SUM(salesdata[SALES]),salesdata[DATE])
+pastmonth=CALCULATE(SUM(salesdata[SALES]),DATESMTD[DATE])
+for quarter
+pastmonth=CALCULATE(SUM(salesdata[SALES]),DATESQTD[DATE])
+pastyear=CALCULATE(SUM(salesdata[SALES]),DATESYTD[DATE])
+pastyearsamemonth=CALCULATE(salesdata[presentmonth],SAMEPERIODLASTYEAR(salesdata[DATE])
+same quarter last year
+pastyearsamemonth=CALCULATE(salesdata[presentquarter],SAMEPERIODLASTYEAR(salesdata[DATE])
+
+for grouping particular groupshoulduse measure 
+sumeast=sum(orders[price],orders[region]="east")
+
+filters
+sumeastwest=calculate(sum(orders_2024_jan_june[price]),orders_2024_jan_june[region] in {'East","west"}
+Measure=CALCULATE(SUM(sum(orders_2024_jan_june[price]),FILTER(sum(orders_2024_jan_june,AND(sum(orders_2024_jan_june[Region]="East",sum(orders_2024_jan_june[price]>1500))
